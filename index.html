@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Oh | Videographer | Detroit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/83e1eaee60.js"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <h4>Ryan Oh</h4>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="headline">
+        <h1>Videographer // Editor</h1>
+        <a href="#" type="btn" class="reel-btn" onclick="playVid()">WATCH REEL</a>
+
+        <div class="video-container">
+            <i class="fa fa-times close-video" aria-hidden="true" onclick="pauseVid()"></i>
+            <video src="VideographyReel2021.mp4" class="reel-video" id="myreel" controls></video>
+        </div>
+    </div>
+    </header>
+
+    <div class="about" id="about">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="work" id="work">
+        <h4>Recent Work</h4>
+        <div class="portfolio-holder">
+            <div class="portfolio-video"></div>
+            <div class="portfolio-video"></div>
+            <div class="portfolio-video"></div>
+            <div class="portfolio-video"></div>
+            <div class="portfolio-video"></div>
+            <div class="portfolio-video"></div>
+        </div>
+        <a href="#" class="full-portfolio">more +</a>
+    </div>
+
+    <footer class="footer">
+        <div class="socials">
+            <a href="mailto:ryanoh42@gmail.com?subject=Video Inquiry - From Website""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/ryanoh"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

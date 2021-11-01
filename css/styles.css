@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("../images/04.jpg");
+    background-size: cover;
+    background: no-repeat center center cover;
+    height: 100vh;
+}
+
+
+/********** NAV BAR **********/
+.navbar {
+    align-items: center;
+    display: flex;
+    font-family: 'Alata', sans-serif;
+    justify-content: end;
+    padding: 2rem 10rem;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;;
+}
+
+.nav-list a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+}
+
+.nav-list li {
+    font-size: 1rem;
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.logo {
+    color: rgb(245, 245, 245);
+    font-size: 1.8rem;
+    font-family: 'Alata', sans-serif;
+    letter-spacing: 0.1rem;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+
+/********** LANDING **********/
+.headline {
+    color: rgb(245, 245, 245);
+    font-family: 'Montserrat', sans-serif;
+    padding: 18rem 10rem;
+    text-align: right;
+}
+
+.headline h1 {
+    font-size: 2.6rem;
+    letter-spacing: .2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.reel-btn {
+    background-color: rgb(245, 245, 245);
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+
+/********** REEL **********/
+.video-container {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.video-container .close-video {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.video-container video {
+    width: 60%;
+    transform: scale(0);
+    transition: all 0.3s;
+    outline: none ;
+}
+
+.video-container.show {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.video-container.show video {
+    transform: scale(1);
+}
+
+
+
+/********** ABOUT **********/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 26rem;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+
+
+/********** WORK **********/
+.work {
+    background-color: rgb(26, 26, 26);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.work h4 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Alata', sans-serif;
+    color: rgb(245, 245, 245);
+}
+
+.portfolio-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 7rem;
+}
+
+.portfolio-video {
+    min-width: 420px;
+    height: 270px;
+    background-color: #000;
+    margin: 2rem;
+}
+
+.full-portfolio {
+    font-family: 'Alata', sans-serif;
+    color: rgb(245, 245, 245);
+}
+
+
+/********** FOOTER **********/
+
+.footer {
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.footer i {
+    color: rgb(245, 245, 245);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    .nav-list {
+        display: none;
+    }
+}
