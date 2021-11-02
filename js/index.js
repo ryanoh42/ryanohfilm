@@ -23,3 +23,17 @@ function playVid() {    //function to play the reel when it pops up
 function pauseVid() {   //function to pause the reel when it closes
     vid.pause();
 }
+
+
+
+// HAMBURGER MENU
+const burgerBtn = document.querySelector(".burger-btn");
+const burgerMenu = document.querySelector(".burger-menu");
+const closeBurger = document.querySelector(".close-burger");
+
+burgerBtn.addEventListener('click', () => {
+    burgerMenu.classList.remove('hide-burger');
+})
+closeBurger.addEventListener('click', () => {
+    burgerMenu.classList.add('hide-burger');
+})

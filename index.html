@@ -25,10 +25,10 @@
             <h4>Ryan Oh</h4>
         </div>
         <a href="#"><div class="hamburger-container">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-bars burger-btn" aria-hidden="true"></i>
         </div></a>
         <ul class="nav-list">
-            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
             <li><a href="#work">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -36,11 +36,17 @@
     <div class="headline">
         <h1>Videographer // Editor</h1>
         <a href="#" type="btn" class="reel-btn" onclick="playVid()">WATCH REEL</a>
-
         <div class="video-container">
             <i class="fa fa-times close-video" aria-hidden="true" onclick="pauseVid()"></i>
             <div style="padding:56.25% 0 0 0;position:relative;" class="reel-video" id="myreel"><iframe src="https://player.vimeo.com/video/629594943?h=71e0c31042&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ryan Oh | Reel 2021"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             <!-- <video src="VideographyReel2021.mp4" class="reel-video" id="myreel" controls></video> -->
+        </div>
+        <div class="burger-menu hide-burger">
+            <i class="fa fa-times close-burger" aria-hidden="true"></i>
+            <ul class="nav-list-vertical">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
         </div>
     </div>
     </header>
@@ -59,7 +65,7 @@
             <div class="portfolio-video"></div>
             <div class="portfolio-video"></div>
         </div>
-        <a href="#" class="full-portfolio">more +</a>
+        <a href="#" class="more-videos">more +</a>
     </div>
 
     <footer class="footer">
