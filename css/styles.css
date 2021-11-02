@@ -81,6 +81,11 @@ header {
     text-decoration: none;
 }
 
+.mobile-hide {
+    display: flex;
+
+}
+
 
 /********** REEL **********/
 .video-container {
@@ -207,6 +212,10 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+    .header {
+        background-image: url("../images/00.jpg");
+    }
+
     .headline {
         text-align: center;
         padding: 10rem 0;
@@ -244,9 +253,13 @@ header {
         margin: 1rem;
     }
 
-    .mobile-hide {
+    .portfolio-video:nth-child(-n+3) {
         display: none;
     }
+
+    /* .mobile-hide {
+        display: none;
+    } */
 
     .full-portfolio {
         font-size: 1.5rem;
