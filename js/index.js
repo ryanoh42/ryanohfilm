@@ -52,3 +52,28 @@ function pauseReel() {
     // sets it back to the correct link so that it reloads immediately on the next window open
     videoReel.setAttribute('src', vidsrc);
 }
+
+
+// // SHOW MORE VIDEOS ON MOBILE
+// const moreVideos = document.querySelector('.more-videos');
+// moreVideos.addEventListener('click', () => {
+    
+// })
+function videosToggle() {
+    const moreVideos = document.querySelector(".more-videos");
+    const lessVideos = document.querySelector(".less-videos");
+    const hideableVideos = document.querySelectorAll(".hideable");
+    if (moreVideos.style.display === "none") {
+      moreVideos.style.display = "block";
+      lessVideos.style.display = "none";
+      for(var i=0; i< hideableVideos.length; i++){
+        hideableVideos[i].style.display = "none";
+    }
+    } else {
+      moreVideos.style.display = "none";
+      lessVideos.style.display = "block";
+      for(var i=0; i< hideableVideos.length; i++){
+        hideableVideos[i].style.display = "block";
+    }
+    }
+  } 
