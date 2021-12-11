@@ -6,7 +6,6 @@
 header {
     background-image: url("../images/01.jpg");
     background-size: cover;
-    /* background: no-repeat center center cover; */
     height: 100vh;
 }
 
@@ -225,7 +224,7 @@ header {
 }
 
 
-
+/* MEDIA QUERY */
 @media screen and (max-width: 1130px) {
     .navbar {
         padding: 2rem 5rem;
@@ -236,13 +235,16 @@ header {
     }
 
     .portfolio-video {
-        /* width: 320px; */
-        /* height: 180px; */
         margin: 1rem;
     }
     .work {
         padding: 1rem 0;
     }
+
+    .more-videos,
+.less-videos {
+    display: none;
+}
 }
 
 @media screen and (max-width: 640px) {
@@ -292,10 +294,6 @@ header {
         margin: 1rem;
     }
 
-    /* hides 4th video and higher */
-    /* .portfolio-video:nth-child(n+4) {  
-        display: none;
-    } */
     .hideable {
         display: none;
     }
