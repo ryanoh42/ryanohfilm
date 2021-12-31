@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.ico"/>
-    <title>Ryan Oh | Videographer | Detroit</title>
-
+    <title>Ryan Oh | Videographer | Metro Detroit</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -16,60 +15,107 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-    <nav class="navbar">
-        <div class="logo">
-            <h4>Ryan Oh</h4>
-        </div>
-        <a href="#" type="btn"><div class="burger-btn-container">
-            <i class="fa fa-bars burger-btn" aria-hidden="true"></i>
-        </div></a>
-        <ul class="nav-list">
-            <li><a href="#work">Work</a>
-            <li><a class="contact-btn" href="mailto:ryanoh42@gmail.com?subject=Video Inquiry - From Website">Contact</a></li>
-        </ul>
-    </nav>
     <div class="landing">
-        <div class="mobile-nav-container">
-            <i class="fa fa-times close-mobile-nav" aria-hidden="true"></i>
-            <ul class="mobile-nav-list">
-                <li><a href="#work" onclick="closeMobileNav()">Work</a></li>
-                <li><a href="mailto:ryanoh42@gmail.com?subject=Video Inquiry - From Website" onclick="closeMobileNav()">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="logo">
+                Ryan Oh
+            </div>
+            <a href="#" type="btn"><div class="burger-btn-container">
+                <i class="fa fa-bars burger-btn" aria-hidden="true"></i>
+            </div></a>
+            <div class="nav-list">
+                <a href="#featured-videos" class="nav-item">Videos</a>
+                <!-- <a href="" class="nav-item">Photography</a> -->
+                <a href="#contact-form" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="mobile-nav-container">
+                <i class="fa fa-times close-mobile-nav" aria-hidden="true"></i>
+                <ul class="mobile-nav-list">
+                    <li><a href="#featured-videos" onclick="closeMobileNav()">Work</a></li>
+                    <li><a href="#footer" onclick="closeMobileNav()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="landing-content">
+            <h1 class="landing-header">Videographer // Editor</h1>
+            <a href="#/" class="watch-reel-btn" onclick="playVid()">Watch Reel</a>
         </div>
-        <h1>Videographer // Editor</h1>
-        <a href="#" class="reel-btn" onclick="playVid()">WATCH REEL</a>
-        <div class="video-container">
+        <a href="#featured-videos">
+            <i class="landing-down-arrow fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+
+        <div class="reel-container">
             <i class="fa fa-times close-video" aria-hidden="true" onclick="pauseReel()"></i>
             <div style="padding:56.25% 0 0 0;position:relative;" class="reel-video" id="myreel"><iframe id="video" src="https://player.vimeo.com/video/629594943?h=71e0c31042&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ryan Oh | Reel 2021"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
         </div>
     </div>
-    </header>
 
-    <div class="work" id="work">
-        <h4>Featured Work</h4>
-        <div class="portfolio-holder">
-            <div class="portfolio-video"><iframe src="https://www.youtube-nocookie.com/embed/wkFIA6Xq0ts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="portfolio-video"><iframe src="https://www.youtube-nocookie.com/embed/T1WcVT3_Vps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="portfolio-video"><iframe src="https://www.youtube-nocookie.com/embed/A0QOC8GHFs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="portfolio-video hideable"><iframe src="https://www.youtube.com/embed/Velsi4AC8yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="portfolio-video hideable"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/T3Xg1km988w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div>
-            <div class="portfolio-video hideable"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rtzQ3kUJbd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    <div class="featured-videos" id="featured-videos">
+        <h2>Featured Videos</h2>
+        <div class="videos-wrap">
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/wkFIA6Xq0ts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/T1WcVT3_Vps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/A0QOC8GHFs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        <!-- </div> -->
+        <!-- <a href="" class="view-all-videos">view all</a> -->
+        <!-- <div class="all-videos-wrap"> -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Velsi4AC8yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/T3Xg1km988w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/rtzQ3kUJbd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <a href="#work" class="more-videos" onclick="videosToggle()">more +</a>
-        <a href="#work" class="less-videos" onclick="videosToggle()">less -</a>
     </div>
 
-    <footer class="footer" id="footer">
+    <!-- <div class="about">
+        <p>Hi, I'm Ryan. I am a videographer and editor based in the Metro Detroit area. I have worked on all types of videos from music videos, commercials, interviews, food, and more. Whatever you or your business needs, I can create.</p>
+    </div> -->
+
+    <footer id="footer">
+        <div class="contact-form" id="contact-form">
+            <h2>Contact</h2>
+            <form action="" name="contact" method="POST" data-netlify="true">
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="NAME" required>
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                </div>
+                <div class="message">
+                    <textarea name="message" id="message" rows="5" placeholder="MESSAGE"></textarea>
+                </div>
+                <button class="submit-btn"><span>Submit</span></button>
+              </form>                 
+        </div>
         <div class="socials">
-            <a href="mailto:ryanoh42@gmail.com?subject=Video Inquiry - From Website"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a href="https://instagram.com/ryanoh"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
+            <a href="mailto:ryanoh42@gmail.com?subject=Video Inquiry - From Website">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/ryanoh" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="js/index.js"></script>
