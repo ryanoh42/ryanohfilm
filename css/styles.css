@@ -111,10 +111,11 @@ html {
     width: 100%;
 }
 
-.logo {
+.logo a {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -181,6 +182,12 @@ html {
 }
 .burger-btn-container .burger-btn {
     color: rgb(245, 245, 245);
+    font-size: 1.5rem;
+    z-index: 5;
+}
+
+.burger-btn-container .video-burger-btn {
+    color: #003f58;
     font-size: 1.5rem;
     z-index: 5;
 }
@@ -306,13 +313,16 @@ input, textarea {
     position: relative;
 }
 
-.video-nav-item, .video-logo, .video-contact-btn {
+.video-nav-item, .video-logo a, .video-contact-btn {
     color: #003f58;
 }
 
 .video-contact-btn {
     border: #003f58 2px solid;
 }
+
+
+
 
 @media (max-width: 664px) {
     .landing {
@@ -346,7 +356,7 @@ input, textarea {
 
     .burger-btn {
         font-size: 1.5rem;
-    }
+    } 
 
     .video-container {
         min-height: 180px;
