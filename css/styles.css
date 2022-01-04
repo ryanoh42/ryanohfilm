@@ -21,7 +21,7 @@ html {
 }
 
 .landing-content {
-    padding: 0 4rem;
+    padding: 0 5rem;
     text-align: right;
     transform: translateY(1.5rem);
 }
@@ -104,7 +104,7 @@ html {
     font-size: 0.8rem;
     font-weight: 500;
     justify-content: space-between;
-    padding: 1.5rem 4rem;
+    padding: 2rem 5rem;
     position: absolute;
     top: 0; left: 0;
     text-transform: uppercase;
@@ -193,7 +193,7 @@ html {
 }
 
 .featured-videos h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
 }
 
@@ -201,7 +201,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
 }
 
 .video-container {
@@ -215,17 +215,8 @@ html {
     width: 100%;
 }
 
-.view-all-videos {
+.see-all-videos {
     color: #000;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    transform: all 0.2s ease-in-out;
-}
-
-.all-videos-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
 /* FOOTER */
@@ -301,7 +292,29 @@ input, textarea {
 }
 
 
-@media (max-width: 640px) {
+/* VIDEOS PAGE */
+.video-navbar {
+    background-color: #fff;
+    box-shadow:
+        1.4px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        3.5px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        6.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        11.6px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        21.7px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        52px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+    position: relative;
+}
+
+.video-nav-item, .video-logo, .video-contact-btn {
+    color: #003f58;
+}
+
+.video-contact-btn {
+    border: #003f58 2px solid;
+}
+
+@media (max-width: 664px) {
     .landing {
         background-image: url("../images/mobile.jpg");
         height: 100vh;
@@ -313,6 +326,10 @@ input, textarea {
 
     .landing-header {
         font-size: 2rem;
+    }
+
+    .navbar {
+        padding: 1.5rem 2rem;
     }
 
     .nav-list {
@@ -329,6 +346,11 @@ input, textarea {
 
     .burger-btn {
         font-size: 1.5rem;
+    }
+
+    .video-container {
+        min-height: 180px;
+        min-width: 320px;
     }
 
 }
