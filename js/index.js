@@ -1,8 +1,8 @@
 // REEL POP UP
-const btn = document.querySelector('.watch-reel-btn'); //set constant for the "Watch Reel" button
-const reelContainer = document.querySelector('.reel-container'); //set constant for the video-container
-const close = document.querySelector('.close-video'); //set constant for the "x" button
-const vid = document.getElementById("myreel"); //set constant for the video/reel itself
+const btn = document.querySelector('.watch-reel-btn');
+const reelContainer = document.querySelector('.reel-container');
+const close = document.querySelector('.close-video');
+const vid = document.querySelector('#myreel');
 
 btn.addEventListener('click', () => {   //listens for a click on the "Watch reel" button
     reelContainer.classList.add('show');   //adds the class .show to the video-container
@@ -14,7 +14,7 @@ close.addEventListener('click', () => { //listens for a click on the "x" button
 })
 
 // PAUSE REEL WHEN CLOSED
-const videoReel = document.getElementById('video');
+const videoReel = document.querySelector('#video');
 // saves the current iframe source
 const vidsrc = videoReel.getAttribute('src');
 function pauseReel() {
